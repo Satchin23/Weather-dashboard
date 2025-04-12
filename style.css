@@ -1,22 +1,70 @@
 body {
-  font-family: sans-serif;
-  text-align: center;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background 0.5s ease;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.weather-container {
+  background: rgba(255, 255, 255, 0.2);
   padding: 30px;
-  background-color: #f0f4f8;
+  border-radius: 20px;
+  text-align: center;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  color: white;
+  backdrop-filter: blur(8px);
+  min-width: 300px;
 }
 
-input {
-  padding: 10px;
-  width: 200px;
+.search-box {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
 }
 
-button {
+.search-box input {
   padding: 10px;
-  margin-left: 10px;
+  font-size: 16px;
+  width: 70%;
+  border: none;
+  border-radius: 10px 0 0 10px;
+}
+
+.search-box button {
+  padding: 10px;
+  border: none;
+  background-color: #4caf50;
+  color: white;
+  border-radius: 0 10px 10px 0;
   cursor: pointer;
 }
 
-#weatherResult {
-  margin-top: 30px;
-  font-size: 20px;
+.weather-card h1 {
+  font-size: 48px;
+  margin: 10px 0;
+}
+
+.sunny {
+  background-image: url('https://i.ibb.co/sy1x8VK/sunny.jpg');
+}
+
+.clouds {
+  background-image: url('https://i.ibb.co/SdD8GpS/cloudy.jpg');
+}
+
+.rain {
+  background-image: url('https://i.ibb.co/3ksV0YN/rainy.jpg');
+}
+
+.clear {
+  background-image: url('https://i.ibb.co/4Rm0KnZ/clear.jpg');
+}
+
+.mist {
+  background-image: url('https://i.ibb.co/g3V4qGd/mist.jpg');
 }
